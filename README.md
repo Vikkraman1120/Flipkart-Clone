@@ -29,3 +29,6 @@ Technologies Used
    CSS3: Employed for styling and layout, including responsive design.
 
    Font Awesome: Used for icons and symbols.
+
+   Live Project | Replit : https://a302a526-8640-46c7-9c7e-54165f7b61e3-00-3mvkd5qotn80t.pike.replit.dev/
+   
