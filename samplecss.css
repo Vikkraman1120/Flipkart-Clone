@@ -357,9 +357,6 @@ header .cart svg {
  
 }
 
-
-
-
 /*Footer*/
 body,
 ul {
@@ -399,7 +396,7 @@ ul {
   color: #fff;
   text-decoration: none;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 
 .footer-bottom {
@@ -415,7 +412,7 @@ ul {
 .social-media a {
   color: #fff;
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -424,19 +421,98 @@ ul {
   }
 }
 
-/* 
-.icon-facebook::before {
-  content: "F";
+
+/* signup page styles */
+
+.container-center{
+  margin :20px auto;
+  border-radius: 1px solid grey;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  width : 855px;
+  height: 600px;
+  display: flex;
 }
 
-.icon-twitter::before {
-  content: "T";
+.left-container{
+  color: white;
+  width: 40%;
+  align-content: center;
+  padding: 40px 33px;
+  background: url('./images/login-img.png') no-repeat;
+  background-position: center 85%;
+  background-color: var(--primary-color);
+  font-size: 15px;
+}
+.left-container h2{
+  margin: 20px 0px;
+  font-size: 25px;
+}
+.left-container h6{
+  margin: 20px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color : #dbdbdb;
+
 }
 
-.icon-instagram::before {
-  content: "I";
+
+.right-container{
+  display: flex;
+  color:grey;
+  width: 60%;
+  background-color: white;
+  height: 528px;
+  padding:55px 40px 16px ;
+  flex-direction: column;
+}
+.right-container form{
+  flex: 1; 
+  justify-content: center;
+  align-items: center;
+}
+.right-container input{
+  width: 100%;
+  color: gray;
+  padding: 8px 10px 10px 0;
+  border : none;
+  outline: none;
+  font-size: 18px;
+  
 }
 
-.icon-linkedin::before {
-  content: "L";
-} */
+.right-container .tc-text{
+  margin: 20px auto;
+  font-size: 12px;
+}
+.tc-text a{
+  text-decoration: none;
+  color : var(--primary-color);
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.right-container .new-page a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+  color : var(--primary-color);
+
+}
+#contact {
+  border: none;
+  border-bottom: 1px solid grey; 
+  width: 100%; 
+}
+
+#signup-button{
+  background-color: orangered;
+  border-style: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  color : #fff;
+  width: 100%;
+  height : 48px;
+  font-size: 18px;
+}
