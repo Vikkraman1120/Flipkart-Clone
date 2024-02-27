@@ -27,6 +27,7 @@ header {
   /* position: relative; */
   min-width: 100px;
   position: fixed;
+  box-shadow: 0 0 5px grey;
 }
 .nav-position{
   height: 65px;
@@ -49,11 +50,26 @@ header .nav-container .logo {
   display: flex;
   min-width: 137px;
   justify-content: flex-end;
+  flex-direction: column;
+}
+header .nav-container .logo p{
+  color :white;
+  font-style: italic;
+  font-size:small;
+}
+header .nav-container .logo span{
+  color:yellow;
 }
 
 header .nav-container .logo img {
   width: 75px;
 }
+header .nav-container .logo button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 
 header .search {
   height: 100%;
@@ -98,6 +114,7 @@ header .login {
   display: flex;
   align-items: center;
   margin: 0 20px;
+  position: relative;
 }
 
 header .login button {
@@ -110,7 +127,30 @@ header .login button {
   border: none;
   background: white;
   height: 36px;
+  cursor: pointer;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.login:hover .dropdown-content {display: block;}
+
+/* .login:hover #dropbtn {background-color: #3e8e41;} */
 
 header .become-seller {
   height: 100%;
@@ -369,8 +409,6 @@ ul {
   background-color: #212121;
   color: #fff;
   padding: 20px;
-
-
 }
 
 .footer-top {
@@ -396,7 +434,7 @@ ul {
   color: #fff;
   text-decoration: none;
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 .footer-bottom {
@@ -412,7 +450,7 @@ ul {
 .social-media a {
   color: #fff;
   text-decoration: none;
-  margin-left: 100px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -515,4 +553,24 @@ ul {
   width: 100%;
   height : 48px;
   font-size: 18px;
+  border-radius: 2px;
+}
+
+/* card page styles */
+.c-footer{
+  margin: 30px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.c-footer .c-footer-right a{
+  text-decoration: none;
+  color : black;
+  opacity: 0.9;
+}
+
+.c-footer .c-footer-left a {
+  text-decoration: none;
+  color : var(--primary-color);
 }
